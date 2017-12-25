@@ -25,6 +25,7 @@ brew install caskroom/cask/brew-cask
    "spotify"
    "sublime-text"
    "transmission"
+   "visualvm"
    "vlc"
  )
 
