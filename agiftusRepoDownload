@@ -1,0 +1,12 @@
+#!/bin/bash
+cd ~/Code/personal/
+mkdir agiftus
+cd ~/Code/personal/agiftus/
+git clone git@github.com:MarkNBroadhead/AgiftusAPI.git
+git clone git@github.com:MarkNBroadhead/AgiftusAdmin.git
+git clone git@github.com:MarkNBroadhead/AgiftusApiSettings.git
+git clone git@github.com:MarkNBroadhead/AgiftusDeploy.git
+git clone git@github.com:MarkNBroadhead/AgiftusItemUpdater.git
+git clone git@github.com:MarkNBroadhead/AgiftusSite.git
+git clone git@github.com:MarkNBroadhead/amazon-advertising-api.git
+
