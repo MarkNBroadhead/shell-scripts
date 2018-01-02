@@ -1,4 +1,6 @@
 #!/bin/bash
+echo "Running Mark's macOS update script"
 brew upgrade
 brew cask upgrade
 
+mas upgrade
