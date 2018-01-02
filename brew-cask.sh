@@ -17,6 +17,7 @@ brew install caskroom/cask/brew-cask
    "gpgtools"
    "insomnia"
    "iterm2"
+   "kdiff3"
    "mysqlworkbench"
    "rescuetime"
    "slack"
@@ -25,6 +26,7 @@ brew install caskroom/cask/brew-cask
    "spotify"
    "sublime-text"
    "transmission"
+   "tunnelblick"
    "visualvm"
    "vlc"
  )

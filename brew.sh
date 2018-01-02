@@ -67,6 +67,7 @@ brew install zopfli
 brew install zsh
 
 # Dev tools
+brew install flyway
 brew install gradle
 brew install jmeter
 brew install maven
