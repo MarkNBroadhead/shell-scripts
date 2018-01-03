@@ -66,5 +66,7 @@ Most things are taken care of automatically with the set up script, but some man
 - Make new SSH key
 - Add ssh key to keychain with the ssh-add command
 - Configure copyless to start on boot
+- Add ssh key to keychain with ssh-add
+- Add code directories to directories spotlight search ignores
 
 EOF
