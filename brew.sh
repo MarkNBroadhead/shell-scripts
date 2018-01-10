@@ -50,11 +50,13 @@ brew install git-lfs
 brew install ffmpeg --with-libvpx
 brew install fzf
 brew install htop
+brew install httpie
 brew install imagemagick --with-webp
 brew install mas
 brew install ncdu # find where your diskspace went
 brew install node # This installs `npm` too using the recommended installation method
 brew install ssh-copy-id
+brew install openconnect
 brew install pidcat   # colored logcat guy
 brew install pv
 brew install rename
