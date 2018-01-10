@@ -1,6 +1,15 @@
 #!/bin/bash
 echo "Running Mark's macOS update script"
+echo "Upgrading homebrew apps"
+brew update
 brew upgrade
 brew cask upgrade
 
+echo "Upgrading macOS app store apps"
 mas upgrade
+
+echo "Upgrading npm"
+npm install npm@latest -g
+
+echo "Upgrading macOS"
+sudo softwareupdate -ia

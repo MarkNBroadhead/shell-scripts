@@ -617,6 +617,9 @@ EOD
 # See: https://security.stackexchange.com/a/47786/8918
 defaults write com.apple.terminal SecureKeyboardEntry -bool true
 
+# Enable Allow Apps From Anywhere
+sudo spctl --master-disable
+
 # Disable the annoying line marks
 defaults write com.apple.Terminal ShowLineMarks -int 0
 
