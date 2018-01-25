@@ -19,6 +19,7 @@ brew install caskroom/cask/brew-cask
    "iterm2"
    "kdiff3"
    "mysqlworkbench"
+   "postman"
    "rescuetime"
    "slack"
    "sourcetree"
