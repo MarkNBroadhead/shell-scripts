@@ -68,5 +68,6 @@ Most things are taken care of automatically with the set up script, but some man
 - Configure copyless to start on boot
 - Add ssh key to keychain with ssh-add
 - Add code directories to directories spotlight search ignores
+- Install Docker
 
 EOF
