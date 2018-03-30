@@ -45,6 +45,7 @@ brew install mtr
 
 # Install other useful binaries
 brew install ack
+brew install cowsay
 brew install git
 brew install git-lfs
 brew install ffmpeg --with-libvpx
