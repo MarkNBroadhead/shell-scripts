@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # to maintain cask ....
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
+brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
 # Install native apps
 brew install caskroom/cask/brew-cask
@@ -28,6 +28,7 @@ brew install caskroom/cask/brew-cask
    "sublime-text"
    "transmission"
    "tunnelblick"
+   "visual-studio-code"
    "visualvm"
    "vlc"
  )
