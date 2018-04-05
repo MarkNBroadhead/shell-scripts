@@ -64,9 +64,10 @@ cat << EOF
 Most things are taken care of automatically with the set up script, but some manual items are needed:
 
 - Make new SSH key
+    - ssh-kekygen -t rsa -C "key comment"
+    - add key to stash, soxbitbucket, github enterprise, github
 - Add ssh key to keychain with the ssh-add command
 - Configure copyless to start on boot
-- Add ssh key to keychain with ssh-add
 - Add code directories to directories spotlight search ignores
 - Install Docker
 
