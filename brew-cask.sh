@@ -11,6 +11,7 @@ brew install caskroom/cask/brew-cask
    "boostnote"
    "cakebrew"
    "cyberduck"
+   "dash"
    "disk-inventory-x"
    "dropbox"
    "google-chrome"

@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ~/Code/personal/
+mkdir elc
+cd ~/Code/personal/elc/
+git clone https://github.com/EpicEpidemic/EpicLanConnectSite.git
+
