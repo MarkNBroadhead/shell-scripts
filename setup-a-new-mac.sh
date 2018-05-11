@@ -57,6 +57,7 @@ mac_app_store_apps=(
   "406056744" # Evernote
   "1073404370" # LogTail
   "993841014" # CopyLess 2
+  "552792489" # Status Clock
 )
 for mac_app_store_app in "${mac_app_store_apps[@]}"; do
   mas install "$mac_app_store_app"
