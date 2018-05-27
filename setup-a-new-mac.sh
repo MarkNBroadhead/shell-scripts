@@ -4,38 +4,56 @@
 ###########################
 
 echo "Running Mark's macOS setup script"
-echo "Installing Homebrew"
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-echo "Installing git and mackup"
-brew install git
-brew install mackup
 
-echo "Restoring configuration from mackup, requires dropbox"
-mackup restore
+if ! [ -x "$(command -v brew)" ]; then
+  echo "Installing Homebrew"
+  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
+
+if ! [ -x "$(command -v git)" ]; then
+  echo "Installing git and mackup"
+  brew install git
+  git config --global user.name "Mark N Broadhead"
+  git config --global user.email MarkNBroadhead@gmail.com
+fi
+#brew install mackup
+#echo "Restoring configuration from mackup, requires dropbox"
+#mackup restore
+
+if [ ! -f ~/.ssh/id_rsa ]; then
+  echo "creating new SSH key. Please enter comment for key"
+  read keyComment
+  ssh-keygen -t rsa -C "$keyComment"
+  echo "Public key follows. Please manually add to github right now."
+  cat ~/.ssh/id_rsa.pub
+  read -p "Press enter to continue"
+fi
 
 echo "Building directory structure"
-cd ~
-mkdir Code
+mkdir -p ~/Code
 cd ~/Code
-mkdir work personal
+mkdir -p work personal
 
 echo "Cloning shell scripts"
 cd ~/Code
 git clone https://github.com/MarkNBroadhead/shell-scripts
-
-echo "Cloning dotfiles into ~/.dotfiles"
-cd ~
-git clone git@github.com:MarkNBroadhead/dotfiles.git .dotfiles
-cd ~/.dotfiles/
-./dotfiles link
+cd shell-scripts
 
 echo "Installing Homebrew packages"
 ./brew.sh
 ./brew-cask.sh
 
+#echo "Cloning dotfiles into ~/.dotfiles"
+#cd ~
+#git clone https://github.com/MarkNBroadhead/dotfiles .dotfiles
+#cd ~/.dotfiles/
+#./dotfiles.sh link
+
 echo "Installing Vim Awesome"
-git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
-sh ~/.vim_runtime/install_awesome_vimrc.sh
+if [ ! -f ~/.vim_runtime/install_awesome_vimrc.sh ]; then
+  git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+  sh ~/.vim_runtime/install_awesome_vimrc.sh
+fi
 
 echo "Installing Oh-my-zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

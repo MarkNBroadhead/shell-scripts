@@ -2,7 +2,6 @@
 
 # ~/.macos
 # Mark's slight fork of https://mths.be/macos
-# Sets up 
 
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
@@ -19,12 +18,14 @@ echo "Updating settings"
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
+echo "Please enter computer hostname"
+read HOST
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "macOne"
-sudo scutil --set HostName "macOne"
-sudo scutil --set LocalHostName "macOne"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "macOne"
+sudo scutil --set ComputerName "$HOST"
+sudo scutil --set HostName "$HOST"
+sudo scutil --set LocalHostName "$HOST"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$HOST"
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
