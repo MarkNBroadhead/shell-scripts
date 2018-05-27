@@ -2,7 +2,8 @@
 PERSONAL_DIR=~/Code/personal
 mkdir -p $PERSONAL_DIR/elc
 cd $PERSONAL_DIR/elc
-git clone https://github.com/EpicEpidemic/EpicLanConnectSite.git
+git clone git@github.com:EpicEpidemic/EpicLanConnectSite.git
+git clone git@github.com:EpicEpidemic/EpicLanConnectAPI.git
 
 mkdir -p $PERSONAL_DIR/agiftus
 cd $PERSONAL_DIR/agiftus

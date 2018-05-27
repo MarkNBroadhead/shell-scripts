@@ -18,6 +18,8 @@ brew install caskroom/cask/brew-cask
    "gpgtools"
    "insomnia"
    "iterm2"
+   "java"
+   "java8"
    "kdiff3"
    "mysqlworkbench"
    "postman"

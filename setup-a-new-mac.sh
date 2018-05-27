@@ -11,7 +11,7 @@ if ! [ -x "$(command -v brew)" ]; then
 fi
 
 if ! [ -x "$(command -v git)" ]; then
-  echo "Installing git and mackup"
+  echo "Installing and configuring git"
   brew install git
   git config --global user.name "Mark N Broadhead"
   git config --global user.email MarkNBroadhead@gmail.com
@@ -27,6 +27,7 @@ if [ ! -f ~/.ssh/id_rsa ]; then
   echo "Public key follows. Please manually add to github right now."
   cat ~/.ssh/id_rsa.pub
   read -p "Press enter to continue"
+  ssh-add
 fi
 
 echo "Building directory structure"
@@ -89,10 +90,7 @@ cat << EOF
 
 Most things are taken care of automatically with the set up script, but some manual items are needed:
 
-- Make new SSH key
-    - ssh-kekygen -t rsa -C "key comment"
-    - add key to stash, soxbitbucket, github enterprise, github
-- Add ssh key to keychain with the ssh-add command
+- Add SSH key to stash, soxbitbucket, github enterprise, github
 - Configure copyless to start on boot
 - Add code directories to directories spotlight search ignores
 - Install Docker

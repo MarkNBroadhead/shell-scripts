@@ -33,6 +33,9 @@ sudo pmset -a standbydelay 86400
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
 
+# Enable Dark Mode
+defaults write -g _HIEnableThemeSwitchHotKey 1
+
 # Disable transparency in the menu bar and elsewhere
 defaults write com.apple.universalaccess reduceTransparency -bool true
 
@@ -220,7 +223,7 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 defaults write com.apple.finder AppleShowAllFiles -bool true
 
 # Finder: show all filename extensions
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool false
 
 # Finder: show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
