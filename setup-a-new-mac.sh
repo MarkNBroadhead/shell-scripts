@@ -35,10 +35,9 @@ mkdir -p ~/Code
 cd ~/Code
 mkdir -p work personal
 
-echo "Cloning shell scripts"
-cd ~/Code
-git clone https://github.com/MarkNBroadhead/shell-scripts
-cd shell-scripts
+echo "Cloning all repos including shell scripts"
+./downloadRepos.sh
+cd personal/shell-scripts
 
 echo "Installing Homebrew packages"
 ./brew.sh
