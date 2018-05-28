@@ -5,7 +5,6 @@ echo "Cloning shell scripts"
 cd $PERSONAL_DIR
 git clone git@github.com:MarkNBroadhead/shell-scripts.git
 git clone git@github.com:MarkNBroadhead/StartPage.git
-git clone git@github.com:MarkNBroadhead/Diablo3Calculator.git
 
 # other people's project I'm heling with
 git clone git@github.com:MarkNBroadhead/Heroes-of-Order.git
