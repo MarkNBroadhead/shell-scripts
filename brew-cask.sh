@@ -14,6 +14,7 @@ brew install caskroom/cask/brew-cask
    "dash"
    "disk-inventory-x"
    "dropbox"
+   "gimp"
    "google-chrome"
    "gpgtools"
    "insomnia"
