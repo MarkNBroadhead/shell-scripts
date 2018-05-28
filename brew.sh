@@ -17,6 +17,9 @@ brew install findutils
 # GNU `sed`, overwriting the built-in `sed`
 brew install gnu-sed --with-default-names
 
+# Install neovim
+brew install nvim
+
 # Install wget with IRI support
 brew install wget --with-iri
 
