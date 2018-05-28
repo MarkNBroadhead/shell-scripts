@@ -93,5 +93,8 @@ Most things are taken care of automatically with the set up script, but some man
 - Configure copyless to start on boot
 - Add code directories to directories spotlight search ignores
 - Install Docker
+- Enable dark mode
+- Change caps lock to be ESC
+- Change function keys to work as standard function keys
 
 EOF
