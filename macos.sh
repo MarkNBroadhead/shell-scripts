@@ -18,14 +18,14 @@ echo "Updating settings"
 ###############################################################################
 # General UI/UX                                                               #
 ###############################################################################
-echo "Please enter computer hostname"
-read HOST
+#echo "Please enter computer hostname"
+#read HOST
 
 # Set computer name (as done via System Preferences → Sharing)
-sudo scutil --set ComputerName "$HOST"
-sudo scutil --set HostName "$HOST"
-sudo scutil --set LocalHostName "$HOST"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$HOST"
+#sudo scutil --set ComputerName "$HOST"
+#sudo scutil --set HostName "$HOST"
+#sudo scutil --set LocalHostName "$HOST"
+#sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$HOST"
 
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
