@@ -89,8 +89,8 @@ cat << EOF
 
 Most things are taken care of automatically with the set up script, but some manual items are needed:
 
-- Add SSH key to stash, soxbitbucket, github enterprise, github
-- Configure copyless to start on boot
+- Add SSH key to github
+- Configure Copyless, Status Clock to start on boot
 - Add code directories to directories spotlight search ignores
 - Install Docker
 - Enable dark mode
