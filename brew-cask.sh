@@ -4,6 +4,7 @@
 brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
 
 brew tap caskroom/versions
+berw tap caskroom/fonts
 
 # Install native apps
 brew install caskroom/cask/brew-cask
@@ -16,6 +17,10 @@ brew install caskroom/cask/brew-cask
    "dash"
    "disk-inventory-x"
    "dropbox"
+   "font-fira-code"
+   "font-fira-mono"
+   "font-fira-mono-for-powerline"
+   "font-fira-sans"
    "gimp"
    "google-chrome"
    "gpgtools"
