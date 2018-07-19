@@ -23,6 +23,7 @@ brew install caskroom/cask/brew-cask
    "font-fira-sans"
    "gimp"
    "google-chrome"
+   "google-cloud-sdk"
    "gpgtools"
    "insomnia"
    "iterm2"
