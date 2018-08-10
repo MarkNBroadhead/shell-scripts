@@ -23,7 +23,7 @@ fi
 if [ ! -f ~/.ssh/id_rsa ]; then
   echo "creating new SSH key. Please enter comment for key"
   read keyComment
-  ssh-keygen -t rsa -C "$keyComment"
+  ssh-keygen -t rsa -b 4096 -C "$keyComment"
   echo "Public key follows. Please manually add to github right now."
   cat ~/.ssh/id_rsa.pub
   read -p "Press enter to continue"
