@@ -70,7 +70,6 @@ brew install terminal-notifier
 brew install the_silver_searcher
 brew install tree
 brew install tmux
-brew install yed
 brew install zopfli
 brew install zsh
 

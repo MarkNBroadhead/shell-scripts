@@ -44,6 +44,7 @@ brew install caskroom/cask/brew-cask
    "visual-studio-code"
    "visualvm"
    "vlc"
+   "yed"
  )
 
  for package in "${cask_packages[@]}"; do
