@@ -11,10 +11,10 @@ brew install caskroom/cask/brew-cask
 
  cask_packages=(
    "atom"
-   "boostnote"
    "cakebrew"
    "cyberduck"
    "dash"
+   "dbvisualizer"
    "disk-inventory-x"
    "dropbox"
    "font-fira-code"
@@ -37,6 +37,7 @@ brew install caskroom/cask/brew-cask
    "sourcetree"
    "spectacle"
    "spotify"
+   "sublime-merge"
    "sublime-text"
    "transmission"
    "tunnelblick"

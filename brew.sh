@@ -56,6 +56,7 @@ brew install fzf
 brew install htop
 brew install httpie
 brew install imagemagick --with-webp
+brew install jq
 brew install mas
 brew install ncdu # find where your diskspace went
 brew install node # This installs `npm` too using the recommended installation method
@@ -69,15 +70,30 @@ brew install terminal-notifier
 brew install the_silver_searcher
 brew install tree
 brew install tmux
+brew install yed
 brew install zopfli
 brew install zsh
 
 # Dev tools
+brew install awscli
 brew install flyway
 brew install gradle
+brew install groovysdk
+brew install helm
+brew install istioctl
+brew install jenv
+brew install jetty
 brew install jmeter
+brew install kafka
+brew install libcouchbase
 brew install maven
 brew install mysql
+brew install sqlite
+brew install protobuf
+brew install postgres
+brew install sublime-merge
+brew install terraform
+brew install vault
 
 
 # CTF tools
