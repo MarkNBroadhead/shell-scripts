@@ -65,7 +65,6 @@ brew install openconnect
 brew install pidcat   # colored logcat guy
 brew install pv
 brew install rename
-brew install rtv
 brew install terminal-notifier
 brew install the_silver_searcher
 brew install tree
