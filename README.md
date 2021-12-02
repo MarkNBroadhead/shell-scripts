@@ -2,8 +2,7 @@
 Mark's shell scripts
 
 # Setting up a new computer
-* Run the appropriate command for your environment
-`https://github.com/MarkNBroadhead/shell-scripts/set-up-a-new-(os)`
+* Run: `bash <(curl -s https://raw.githubusercontent.com/MarkNBroadhead/shell-scripts/master/init.sh)`
 
 
 # Thanks
