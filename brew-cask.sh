@@ -1,17 +1,11 @@
-#!/bin/bash
-
+/bin/bash
 # to maintain cask ....
-brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup
+brew update && brew upgrade && brew cleanup && brew cleanup
 
-brew tap caskroom/versions
-berw tap caskroom/fonts
-
-# Install native apps
-brew install caskroom/cask/brew-cask
+brew tap homebrew/cask-versions
+brew tap homebrew/cask-fonts
 
 cask_packages=(
-  "atom"
-  "cakebrew"
   "cyberduck"
   "dash"
   "dbvisualizer"
@@ -27,10 +21,9 @@ cask_packages=(
   "gpgtools"
   "insomnia"
   "iterm2"
-  "java"
-  "java8"
   "kdiff3"
   "mysqlworkbench"
+  "obsidian"
   "postman"
   "rescuetime"
   "slack"
@@ -42,11 +35,10 @@ cask_packages=(
   "transmission"
   "tunnelblick"
   "visual-studio-code"
-  "visualvm"
   "vlc"
   "yed"
 )
 
 for package in "${cask_packages[@]}"; do
-    brew cask install "$package"
+    brew install --cask "$package"
 done
